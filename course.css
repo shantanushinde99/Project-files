@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center; /* Center align everything */
+}
+
+h1 {
+  margin-bottom: 20px; /* Add space below h1 */
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Align cards evenly */
+}
+
+.card {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px; /* Add space between cards */
+  width: 200px; /* Set card width */
+}
+
+.card img {
+  width: 100%; /* Make images fill the card width */
+  border-radius: 10px; /* Apply border radius to images */
+}
+
+.card span {
+  display: block;
+  margin-top: 10px; /* Add space between image and text */
+}
+
+.progress-circle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-circle .progress {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  clip: rect(0, 20px, 40px, 0); /* Half circle clip */
+}
+
+.progress-bar {
+  height: 10px; /* Set height of progress bars */
+  background-color: #ddd; /* Set background color */
+  border-radius: 5px; /* Set border radius */
+  margin-top: 10px; /* Add space between progress bar and text */
+}
+
+.progress-bar .progress {
+  height: 100%; /* Set height to fill progress bar */
+  background-color: #4caf50; /* Set progress bar color */
+  border-radius: 5px; /* Set border radius */
+}
+
+.statistics {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px; /* Add some space between course cards and statistics */
+}
+
+.statistics .card {
+  width: calc(33.33% - 20px); /* Adjust width for each card */
+}
+
+.statistics .card:nth-child(2) {
+  margin: 0 10px; /* Add margin between cards */
+}
